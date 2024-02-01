@@ -228,7 +228,7 @@ namespace interda.vistas
                     if (institucionImagenes.ContainsKey(institucion))
                     {
                         string nombreImagen = institucionImagenes[institucion];
-                        MostrarImagen(nombreImagen);
+                       // MostrarImagen(nombreImagen);
                     }
 
                     string mail1 = selectedRow["Mail 1"].ToString();
@@ -254,7 +254,7 @@ namespace interda.vistas
 
         }
 
-        private void MostrarImagen(string nombreImagen)
+       /* private void MostrarImagen(string nombreImagen)
         {
             //string rutaImagen = Path.Combine(@"C:\Users\clinica\source\repos\MatiasMorales01\interda\interda\imagenes", nombreImagen);
             string rutaImagen = Path.Combine(@"C:\Users\clinica\source\repos\interda\interda\imagenes", nombreImagen);
@@ -267,7 +267,7 @@ namespace interda.vistas
                 pictureBox2.Image = null;
             }
         }
-
+       */
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {

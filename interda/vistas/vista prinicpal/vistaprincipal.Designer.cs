@@ -62,11 +62,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.mySqlConnection1 = new MySql.Data.MySqlClient.MySqlConnection();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -380,7 +378,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Info;
-            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.textBox5);
             this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.label9);
@@ -393,15 +390,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(555, 664);
             this.panel1.TabIndex = 32;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(26, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(307, 143);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 32;
-            this.pictureBox2.TabStop = false;
             // 
             // vistaprincipal
             // 
@@ -440,7 +428,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -482,6 +469,5 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Panel panel1;
         private MySql.Data.MySqlClient.MySqlConnection mySqlConnection1;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
