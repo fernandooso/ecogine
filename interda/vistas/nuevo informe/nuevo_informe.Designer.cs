@@ -32,13 +32,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button1_atras = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.hospitales = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -110,6 +108,7 @@
             this.comboBox1_tipo_examen = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tablabuscador = new System.Windows.Forms.DataGridView();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -120,7 +119,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(25, 14);
+            this.button1.Location = new System.Drawing.Point(114, 13);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 34);
             this.button1.TabIndex = 28;
@@ -130,7 +129,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(25, 51);
+            this.button2.Location = new System.Drawing.Point(114, 50);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(48, 23);
             this.button2.TabIndex = 29;
@@ -140,7 +139,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(79, 51);
+            this.button3.Location = new System.Drawing.Point(168, 50);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(48, 23);
             this.button3.TabIndex = 30;
@@ -148,21 +147,10 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button1_atras
-            // 
-            this.button1_atras.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1_atras.Location = new System.Drawing.Point(1092, 21);
-            this.button1_atras.Name = "button1_atras";
-            this.button1_atras.Size = new System.Drawing.Size(113, 45);
-            this.button1_atras.TabIndex = 22;
-            this.button1_atras.Text = "Atrás";
-            this.button1_atras.UseVisualStyleBackColor = true;
-            this.button1_atras.Click += new System.EventHandler(this.button1_Click);
-            // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(144, 22);
+            this.button4.Location = new System.Drawing.Point(233, 21);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(197, 52);
             this.button4.TabIndex = 28;
@@ -173,7 +161,7 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(347, 22);
+            this.button5.Location = new System.Drawing.Point(436, 21);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(225, 52);
             this.button5.TabIndex = 31;
@@ -183,7 +171,7 @@
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(587, 14);
+            this.button7.Location = new System.Drawing.Point(676, 13);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(163, 68);
             this.button7.TabIndex = 32;
@@ -194,7 +182,7 @@
             // 
             this.hospitales.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hospitales.FormattingEnabled = true;
-            this.hospitales.Location = new System.Drawing.Point(756, 32);
+            this.hospitales.Location = new System.Drawing.Point(845, 31);
             this.hospitales.Name = "hospitales";
             this.hospitales.Size = new System.Drawing.Size(218, 28);
             this.hospitales.TabIndex = 33;
@@ -203,22 +191,12 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(980, 24);
+            this.label14.Location = new System.Drawing.Point(1069, 23);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(24, 20);
             this.label14.TabIndex = 34;
             this.label14.Text = "IV";
             this.label14.Click += new System.EventHandler(this.label14_Click);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(980, 40);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(86, 20);
-            this.label15.TabIndex = 35;
-            this.label15.Text = "La Serena";
             // 
             // panel1
             // 
@@ -228,7 +206,6 @@
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button1_atras);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
@@ -929,6 +906,16 @@
             this.tablabuscador.Size = new System.Drawing.Size(1253, 149);
             this.tablabuscador.TabIndex = 35;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(1069, 39);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(86, 20);
+            this.label15.TabIndex = 35;
+            this.label15.Text = "La Serena";
+            // 
             // nuevo_informe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -958,13 +945,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1_atras;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.ComboBox hospitales;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label18;
@@ -1036,5 +1021,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridView tablabuscador;
+        private System.Windows.Forms.Label label15;
     }
 }

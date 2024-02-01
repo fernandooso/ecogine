@@ -166,7 +166,7 @@ namespace interda.vistas
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            for(int i = 0; i < 10; i++)
+            for(int i = 0; i < 5; i++)
             {
                 sonido.Play();
                 Thread.Sleep(500);
