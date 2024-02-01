@@ -12,10 +12,10 @@ namespace interda.controlador
 {
     public class conector
     {
-        static string servidor = "localhost";
+        static string servidor = "172.22.83.67";
         static string db = "interda";
-        static string user = "root";
-        static string pass = "root";
+        static string user = "ecogine";
+        static string pass = "Ec0_61n3";
         static string cadenaConexion = $"Server={servidor};Database={db};User ID={user};Password={pass};";
 
         public MySqlConnection crear_conexion()

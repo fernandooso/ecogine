@@ -18,18 +18,12 @@ namespace interda.vistas
             InitializeComponent();
             this.Width = 800;
             this.Height = 583;
-            string rutaImagen = "C:\\Users\\clinica\\source\\repos\\interda\\interda\\imagenes\\fondo.png";
-            this.BackgroundImage = Image.FromFile(rutaImagen);
+           // string rutaImagen = "C:\\Users\\clinica\\source\\repos\\interda\\interda\\imagenes\\fondo.png";
+            //this.BackgroundImage = Image.FromFile(rutaImagen);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
         }
 
-        /*private void button1_Click(object sender, EventArgs e)
-        {
-            vistaprincipal atras = new vistaprincipal();
-            atras.Show();
-            this.Hide();
-        }*/
 
         private void MostrarVentana(string tabla, string label)
         {
