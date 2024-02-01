@@ -187,6 +187,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="vistas\buscinf\pb.resx">
       <DependentUpon>pb.cs</DependentUpon>
@@ -243,6 +244,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="modelo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\sonido.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\sonido2.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

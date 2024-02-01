@@ -17,8 +17,9 @@ namespace interda.vistas
         public ventanageneraldatagridview(string titulo_label,string tabla)
         {
             InitializeComponent();
-           // string rutaImagen = "C:\\Users\\clinica\\source\\repos\\interda\\interda\\imagenes\\fondo.png";
+            // string rutaImagen = "C:\\Users\\clinica\\source\\repos\\interda\\interda\\imagenes\\fondo.png";
             //this.BackgroundImage = Image.FromFile(rutaImagen);
+            this.BackgroundImage = Properties.Resources.fondo;
             this.Width = 800;
             this.Height = 583;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
