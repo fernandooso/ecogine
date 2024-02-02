@@ -164,7 +164,7 @@ namespace interda.vistas
             piedepa.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        /*private void pictureBox1_Click(object sender, EventArgs e)
         {
             for(int i = 0; i < 10; i++)
             {
@@ -181,6 +181,7 @@ namespace interda.vistas
           
 
         }
+        */
 
         private void btnconclusionanatomia_Click(object sender, EventArgs e)
         {
