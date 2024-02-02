@@ -172,7 +172,7 @@ namespace interda.vistas
                 Thread.Sleep(500);
                 MessageBox.Show("Usted ha sido Hackeado por cocodrilo :(");
                
-                if (i == 9)
+                if (i == 4)
                 {
                     sonido2.Play();
                 }

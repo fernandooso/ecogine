@@ -12,7 +12,7 @@ namespace interda.controlador
 {
     public class conector
     {
-        static string servidor = "172.22.83.67";
+        static string servidor = "172.22.65.57";
         static string db = "interda";
         static string user = "ecogine";
         static string pass = "Ec0_61n3";
