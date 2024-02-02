@@ -259,7 +259,6 @@
     <EmbeddedResource Include="vistas\vista prinicpal\vistaprincipal.resx">
       <DependentUpon>vistaprincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="interda_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
