@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9C5AF4BE-7FEC-419E-B33A-D6D6F49ADCC3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>interda</RootNamespace>
+    <AssemblyName>interda</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.2.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.21.9.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.21.9\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.3.5\lib\net462\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.3.5\lib\net462\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.2.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.2.0\lib\net462\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.4.4.1\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.7.0.2\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZstdSharp, Version=0.7.1.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZstdSharp.Port.0.7.1\lib\net461\ZstdSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="controlador\conector.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vistas\buscinf\pb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\buscinf\pb.Designer.cs">
+      <DependentUpon>pb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\pie de pagina\piedepa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\pie de pagina\piedepa.Designer.cs">
+      <DependentUpon>piedepa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\buscinf\binforme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\buscinf\binforme.Designer.cs">
+      <DependentUpon>binforme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\conclusion anatomia\conclusion_anatomia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\conclusion anatomia\conclusion_anatomia.Designer.cs">
+      <DependentUpon>conclusion_anatomia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\institucion\institucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\institucion\institucion.Designer.cs">
+      <DependentUpon>institucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\plantilla utero\plantilla_uteros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\plantilla utero\plantilla_uteros.Designer.cs">
+      <DependentUpon>plantilla_uteros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\anatomia_Fetal\anatomia_Fetal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\anatomia_Fetal\anatomia_Fetal.Designer.cs">
+      <DependentUpon>anatomia_Fetal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\idreferencias\idreferencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\idreferencias\idreferencias.Designer.cs">
+      <DependentUpon>idreferencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\informe obstetrico\informeobstetrico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\informe obstetrico\informeobstetrico.Designer.cs">
+      <DependentUpon>informeobstetrico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\nuevo informe\nuevo_informe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\nuevo informe\nuevo_informe.Designer.cs">
+      <DependentUpon>nuevo_informe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\tablas obstetricas\tablaobstetrica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\tablas obstetricas\tablaobstetrica.Designer.cs">
+      <DependentUpon>tablaobstetrica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\ventana generica\ventanageneraldatagridview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\ventana generica\ventanageneraldatagridview.Designer.cs">
+      <DependentUpon>ventanageneraldatagridview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\vista prinicpal\vistaprincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\vista prinicpal\vistaprincipal.Designer.cs">
+      <DependentUpon>vistaprincipal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="vistas\buscinf\pb.resx">
+      <DependentUpon>pb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\pie de pagina\piedepa.resx">
+      <DependentUpon>piedepa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\buscinf\binforme.resx">
+      <DependentUpon>binforme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\conclusion anatomia\conclusion_anatomia.resx">
+      <DependentUpon>conclusion_anatomia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\institucion\institucion.resx">
+      <DependentUpon>institucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\plantilla utero\plantilla_uteros.resx">
+      <DependentUpon>plantilla_uteros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\anatomia_Fetal\anatomia_Fetal.resx">
+      <DependentUpon>anatomia_Fetal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\idreferencias\idreferencias.resx">
+      <DependentUpon>idreferencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\informe obstetrico\informeobstetrico.resx">
+      <DependentUpon>informeobstetrico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\nuevo informe\nuevo_informe.resx">
+      <DependentUpon>nuevo_informe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\tablas obstetricas\tablaobstetrica.resx">
+      <DependentUpon>tablaobstetrica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\ventana generica\ventanageneraldatagridview.resx">
+      <DependentUpon>ventanageneraldatagridview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\vista prinicpal\vistaprincipal.resx">
+      <DependentUpon>vistaprincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="modelo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\sonido.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\sonido2.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
