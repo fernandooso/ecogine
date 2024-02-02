@@ -27,6 +27,7 @@ namespace interda.vistas
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             tablabuscador.CellDoubleClick += tablabuscador_CellDoubleClick;
+            tablabuscador.KeyDown += tablabuscador_Enter;
             tablabuscador.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             tablabuscador.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             tablabuscador.AutoResizeColumns();
@@ -34,10 +35,29 @@ namespace interda.vistas
         }
         private void tablabuscador_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                int rowIndex = e.RowIndex;
+            AbrirVentana(e.RowIndex);
+        }
 
+        private void tablabuscador_Enter(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (tablabuscador.SelectedCells.Count > 0)
+                {
+                    int rowIndex = tablabuscador.SelectedCells[0].RowIndex;
+                    AbrirVentana(rowIndex);
+
+                    // Deseleccionar la fila después de abrir la ventana
+                    tablabuscador.Rows[rowIndex].Selected = false;
+                    e.Handled = true;
+                }
+            }
+        }
+
+        private void AbrirVentana(int rowIndex)
+        {
+            if (rowIndex >= 0)
+            {
                 DataGridViewRow filaSeleccionada = tablabuscador.Rows[rowIndex];
 
                 string nombre = filaSeleccionada.Cells["Nombres"].Value.ToString();
@@ -50,11 +70,11 @@ namespace interda.vistas
             }
         }
 
+
         private void pruebas_Load(object sender, EventArgs e)
         {
 
         }
-
         private void buscarci_Click(object sender, EventArgs e)
         {
             string textoci = textBoxci.Text;
